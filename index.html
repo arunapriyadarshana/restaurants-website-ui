@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff0000">
+    <title>resto.</title>
+    <link rel="icon" type="image/x-icon" href="/images/title-image.svg">
+    
+    
+    <!-- custom css file link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+     <!-- goole font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <!-- sweeper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+ 
+</head>
+<body>
+
+    <!-- head section start -->
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-utensils logo-icn"></i>resto.</a>
+        <nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#dishes">Dishes</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#review">Review</a>
+            <a href="#order">Order</a>
+        </nav>
+
+        <div class="icons">
+            <div class="menu-icn" >
+                <i class="fa-solid fa-bars" id="menu-bars"></i>
+                <i class="fa-solid fa-xmark" id="menu-xmark"></i>
+            </div>
+            <i class="fa-solid fa-magnifying-glass " id="search-icon" onclick="showSearch();"></i>
+            <a href="#" class="fa-solid fa-heart "></a>
+            <a href="#" class="fa-solid fa-cart-shopping "></a>
+        </div>
+    </header>
+    <!-- head section end -->
+
+    <!-- search form -->
+
+    <form action="" id="search-form">
+        <div class="search-bar">
+            <input type="search" placeholder="search here..." name="" id="search-box">
+            <lable for="search-box"><i class="fa-solid fa-magnifying-glass" id="search-form-icon"></i></lable>
+            <i class="fa-solid fa-xmark" id="search-form-xmark" onclick="hideSearch();"></i>
+        </div>
+    </form>
+    <!-- search form end-->
+
+    <!-- home section start -->
+
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+            <div class="wrapper swiper-wrapper">
+
+                <div class="slide swiper-slide">
+                    <div class="content">
+                        <span>our special dishes</span>
+                        <h3>spicy noodles</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fuga explicabo quia.</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/spicy-noodles.png" alt="spicy noodles">
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <div class="content">
+                        <span>our special dishes</span>
+                        <h3>grilled chicken</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fuga explicabo quia.</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/grilled-chicken.png" alt="grilled chicken">
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <div class="content">
+                        <span>our special dishes</span>
+                        <h3>hot pizza</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fuga explicabo quia.</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/hot-pizza.png" alt="hot pizza">
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+    <!-- home section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- sweeper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- js file -->
+    <script src="js/script.js"></script>
+    <!-- font awson link -->
+    <script src="https://kit.fontawesome.com/44a58941c0.js" crossorigin="anonymous"></script>
+    
+
+</body>
+</html>
